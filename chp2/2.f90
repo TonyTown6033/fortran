@@ -15,7 +15,7 @@ if (poi>=60 .and. poi<70) then
 	str='ok'
 endif
 if (poi<60) then
-	str='wdnmd'
+	str='failed'
 endif
 print*, 'your point is ',str
 end
