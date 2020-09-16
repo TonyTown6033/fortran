@@ -4,7 +4,7 @@ program b8
   num_f=0
 
   do i=1,30
-    print*,'please input the num'
+    print*,'please input the score'
     read*,score
     print*,'load sucesss'
 
