@@ -8,7 +8,10 @@ real x,y
 ! x=1,y=3 
 
 
-a1=3;b1=1;c1=6;a2=5;b2=4;c2=17
+!a1=3;b1=1;c1=6;a2=5;b2=4;c2=17
+
+print*,'please input origin num of eqution'
+read*,a1,b1,a2,b2,c1,c2
 
 
 ! the poly is as follows
@@ -18,6 +21,10 @@ print*,a2,'x','+',b2,'y','=',c2
 !pause
 !solve procedure
 
+if(a1*b2-a2*b1==0) then
+  print*,'this eqution cant solve by cramer famular'
+  stop 
+endif
 x=(b2*c1-b1*c2)/(a1*b2-a2*b1)
 y=(a1*c2-a2*c1)/(a1*b2-a2*b1)
 
