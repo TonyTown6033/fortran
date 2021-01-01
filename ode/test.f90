@@ -1,6 +1,8 @@
 program main
+  use Odetools
+  use Matrixtools
   implicit none
-  external rungle_4,save
+
   real,external::f
   integer,parameter::n=1000
   integer::i
@@ -26,5 +28,5 @@ real function f(x,y)
   implicit none
   real::x,y
 
-  f=5*x+3
+  f=5*sin(x)-3*x**3
 end function f
